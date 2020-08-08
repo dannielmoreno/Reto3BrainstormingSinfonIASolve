@@ -344,7 +344,7 @@ def load_model(name_of_model):
         loaded_max_accuracy_epoch = float(f.read())
     return name_of_model, loaded_loss_array, loaded_accuracy_train_array, loaded_accuracy_dev_array, loaded_max_accuracy, loaded_max_accuracy_epoch
 
-## Train and set various models
+## Train and save various models
 
 model6 = Model6()
 save_model("model6", *main(model6))
